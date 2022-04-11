@@ -1,0 +1,33 @@
+[
+  {
+    "name": "Mojito",
+    "alchoholic": true,
+    "instructions": [
+      {
+        "EN": " Muddle mint leaves with sugar and lime juice. Add a splash of soda water and fill the glass with cracked ice. Pour the rum and top with soda water. Garnish and serve with straw."
+      }
+    ],
+    "ingredients": [
+      {
+        "id": "sTHzlGIVhBdKcxdf",
+        "quantity": 60
+      },
+      {
+        "id": "oTHwcEUGYTEJXqqe",
+        "quantity": 10
+      },
+      {
+        "id": "HpUgxXvJpbvDgCSy",
+        "quantity": 12
+      },
+      {
+        "id": "HJsXUzgHaSmNQPYJ",
+        "quantity": 3
+      },
+      {
+        "id": "twWNdACUnELbZONg",
+        "quantity": 20
+      }
+    ]
+  }
+]

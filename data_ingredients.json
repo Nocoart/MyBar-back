@@ -1,0 +1,42 @@
+[
+  {
+    "id": "sTHzlGIVhBdKcxdf",
+    "name": "Ligth Rum",
+    "unit": "cl",
+    "category": "alcohol",
+    "isRare": false,
+    "imgUrl": "https://www.thecocktaildb.com/images/ingredients/Light%20Rum.png"
+  },
+  {
+    "id": "oTHwcEUGYTEJXqqe",
+    "name": "Lime Juice",
+    "unit": "cl",
+    "category": "juice",
+    "isRare": false,
+    "imgUrl": "https://www.thecocktaildb.com/images/ingredients/Lime.png"
+  },
+  {
+    "id": "HpUgxXvJpbvDgCSy",
+    "name": "Sugar",
+    "unit": "g",
+    "category": "food",
+    "isRare": false,
+    "imgUrl": "https://www.thecocktaildb.com/images/ingredients/Sugar.png"
+  },
+  {
+    "id": "HJsXUzgHaSmNQPYJ",
+    "name": "Mint",
+    "unit": "leafs",
+    "category": "food",
+    "isRare": false,
+    "imgUrl": "https://www.thecocktaildb.com/images/ingredients/Mint.png"
+  },
+  {
+    "id": "twWNdACUnELbZONg",
+    "name": "Soda Water",
+    "unit": "cl",
+    "category": "soft",
+    "isRare": false,
+    "imgUrl": "https://www.thecocktaildb.com/images/ingredients/Soda%20Water.png"
+  }
+]
