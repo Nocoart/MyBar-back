@@ -9,14 +9,31 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const pool = require("../../db");
+const pool = require("../config/db");
+const queries = require("./queries");
 const addIngredient = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     console.log("in th function");
 });
 const getAllIngredients = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
-    console.log("get all ingredients func");
+    try {
+        const response = yield pool.query(queries.getAllIngredients);
+        res.status(200).json(response.rows);
+    }
+    catch (error) {
+        res.status(400).json({ error: error.message });
+    }
+});
+const getIngredientById = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+    try {
+        const response = yield pool.query(queries.getIngredientById, [req.body.id]);
+        res.status(200).json(response.rows);
+    }
+    catch (error) {
+        res.status(400).json({ error: error.message });
+    }
 });
 module.exports = {
     addIngredient,
     getAllIngredients,
+    getIngredientById,
 };

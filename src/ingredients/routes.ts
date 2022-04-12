@@ -1,15 +1,16 @@
 import express, { Application, Request, Response, NextFunction, IRouter } from "express";
 const router: IRouter = express.Router();
 
-const pool = require("../db");
-
 const controller = require("./controller");
 
 //add new ingredient
 router.post("/add", controller.addIngredient);
 
 //get all ingredients
-router.get("/list", controller.getAllIngredients);
+router.get("/all", controller.getAllIngredients);
+
+//get ingredient by id
+router.get("/id", controller.getIngredientById);
 
 //
 //

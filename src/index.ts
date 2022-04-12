@@ -5,6 +5,8 @@ dotenv.config();
 const app: Application = express();
 app.use(express.json());
 
+//just some blavla
+
 const ingredientRoutes = require("./ingredients/routes");
 
 app.get("/", (req: Request, res: Response): void => {

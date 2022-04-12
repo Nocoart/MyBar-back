@@ -8,6 +8,7 @@ const express_1 = __importDefault(require("express"));
 dotenv_1.default.config();
 const app = (0, express_1.default)();
 app.use(express_1.default.json());
+//just some blavla
 const ingredientRoutes = require("./ingredients/routes");
 app.get("/", (req, res) => {
     res.send("default route");

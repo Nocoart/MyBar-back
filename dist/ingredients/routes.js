@@ -5,12 +5,13 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
 const router = express_1.default.Router();
-const pool = require("../db");
 const controller = require("./controller");
 //add new ingredient
 router.post("/add", controller.addIngredient);
 //get all ingredients
-router.get("/list", controller.getAllIngredients);
+router.get("/all", controller.getAllIngredients);
+//get ingredient by id
+router.get("/id", controller.getIngredientById);
 //
 //
 //
