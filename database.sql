@@ -1,4 +1,4 @@
-CREATE DATABASE my_bar_DB;
+CREATE DATABASE my_bar_db;
 
 --\c into my_bar_DB
 
