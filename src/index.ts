@@ -9,7 +9,7 @@ const formidable = require("express-formidable");
 const app: Application = express();
 app.use(formidable());
 
-const cocktailRoutes = require("../routes/cocktailRoutes");
+const cocktailRoutes = require("./routes/cocktailRoutes");
 app.use(cocktailRoutes);
 
 app.all("*", (req: Request, res: Response): void => {
