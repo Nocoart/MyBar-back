@@ -8,6 +8,18 @@ const controller = require("./controller");
 //add new ingredient
 router.post("/add", controller.addIngredient);
 
+//get all ingredients
+router.get("/list", controller.getAllIngredients);
+
+//
+//
+//
+//
+//
+//
+//
+//
+
 // INSERT INTO ingredients(name, unit, category, isRare, imgUrl) VALUES ('Ligth Rum', 'Cl', 'alcohol', false, 'https://www.thecocktaildb.com/images/ingredients/Light%20Rum.png')
 
 // try {
@@ -26,12 +38,5 @@ router.post("/add", controller.addIngredient);
 //   res.status(400).json(error.message);
 // }
 // });
-
-// ingredients_id SERIAL PRIMARY KEY,
-// name VARCHAR(50) UNIQUE,
-// unit VARCHAR(10) NOT NULL,
-// category VARCHAR(20) NOT NULL,
-// isRare BOOLEAN DEFAULT false,
-// imgUrl VARCHAR(150)
 
 module.exports = router;

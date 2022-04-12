@@ -9,9 +9,14 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+const pool = require("../../db");
 const addIngredient = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     console.log("in th function");
 });
+const getAllIngredients = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+    console.log("get all ingredients func");
+});
 module.exports = {
     addIngredient,
+    getAllIngredients,
 };

@@ -8,23 +8,15 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
 Object.defineProperty(exports, "__esModule", { value: true });
-const express_1 = __importDefault(require("express"));
-const router = express_1.default.Router();
-const pool = require("../db");
-//get all cocktails
-router.get("/cocktail/all", (req, res) => {
-    res.json("in the route");
+const pool = require("../../db");
+const addIngredient = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+    console.log("in th function");
 });
-//create cocktail
-router.post("/cocktail/create", (req, res) => __awaiter(void 0, void 0, void 0, function* () {
-    try {
-    }
-    catch (error) {
-        res.status(400).json(error.message);
-    }
-}));
-module.exports = router;
+const getAllIngredients = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+    console.log("get all ingredients func");
+});
+module.exports = {
+    addIngredient,
+    getAllIngredients,
+};
