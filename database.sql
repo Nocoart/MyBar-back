@@ -12,7 +12,7 @@ CREATE TABLE ingredients(
     name VARCHAR(50) UNIQUE,
     unit VARCHAR(10) NOT NULL,
     category VARCHAR(20) NOT NULL,
-    isRare BOOLEAN NOT NULL,
+    isRare BOOLEAN DEFAULT false,
     imgUrl VARCHAR(150)
 );
 
