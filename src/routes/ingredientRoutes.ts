@@ -1,6 +1,7 @@
 import express, { Application, Request, Response, NextFunction, IRouter } from "express";
 
 const router: IRouter = express.Router();
+const pool = require("./db");
 
 //add new ingredient
 

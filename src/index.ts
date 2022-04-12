@@ -2,8 +2,6 @@ import dotenv from "dotenv";
 import express, { Application, Request, Response, NextFunction } from "express";
 dotenv.config();
 
-const pool = require("./db");
-
 const formidable = require("express-formidable");
 
 const app: Application = express();

@@ -6,7 +6,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const dotenv_1 = __importDefault(require("dotenv"));
 const express_1 = __importDefault(require("express"));
 dotenv_1.default.config();
-const pool = require("./db");
 const formidable = require("express-formidable");
 const app = (0, express_1.default)();
 app.use(formidable());
