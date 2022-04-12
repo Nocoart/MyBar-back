@@ -1,5 +1,5 @@
 "use strict";
-const Pool = require("pg").Pool;
+const { Pool } = require("pg");
 const pool = new Pool({
     user: process.env.PG_USER,
     password: process.env.PG_PASSWORD,

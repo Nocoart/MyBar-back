@@ -6,11 +6,13 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const dotenv_1 = __importDefault(require("dotenv"));
 const express_1 = __importDefault(require("express"));
 dotenv_1.default.config();
-const formidable = require("express-formidable");
 const app = (0, express_1.default)();
-app.use(formidable());
-const cocktailRoutes = require("./routes/cocktailRoutes");
-app.use(cocktailRoutes);
+app.use(express_1.default.json());
+const ingredientRoutes = require("./ingredients/routes");
+app.get("/", (req, res) => {
+    res.send("default route");
+});
+app.use("/ingredients", ingredientRoutes);
 app.all("*", (req, res) => {
     res.json({ message: "route not found" });
 });

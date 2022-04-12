@@ -15,22 +15,16 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
 const router = express_1.default.Router();
 const pool = require("../db");
-//add new ingredient
-router.post("/ingredient/add", (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+//get all cocktails
+router.get("/cocktail/all", (req, res) => {
+    res.json("in the route");
+});
+//create cocktail
+router.post("/cocktail/create", (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     try {
-        const { name, unit, category, isRare, imgUrl } = req.body;
-        const newIngredient = yield pool.query(`INSERT INTO ingredients(name) VALUES ($1, $2, $3, $4, $5) RETURNING *`, [name], [unit], [category], [isRare], [imgUrl]);
-        res.status(200).json(newIngredient);
     }
     catch (error) {
-        console.log(error);
         res.status(400).json(error.message);
     }
 }));
-// ingredients_id SERIAL PRIMARY KEY,
-// name VARCHAR(50) UNIQUE,
-// unit VARCHAR(10) NOT NULL,
-// category VARCHAR(20) NOT NULL,
-// isRare BOOLEAN DEFAULT false,
-// imgUrl VARCHAR(150)
 module.exports = router;
