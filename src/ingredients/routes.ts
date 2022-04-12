@@ -10,7 +10,7 @@ router.post("/add", controller.addIngredient);
 router.get("/all", controller.getAllIngredients);
 
 //get ingredient by id
-router.get("/id", controller.getIngredientById);
+router.get("/:id", controller.getIngredientById);
 
 //
 //

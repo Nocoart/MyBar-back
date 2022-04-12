@@ -25,7 +25,7 @@ const getAllIngredients = (req, res) => __awaiter(void 0, void 0, void 0, functi
 });
 const getIngredientById = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     try {
-        const response = yield pool.query(queries.getIngredientById, [req.body.id]);
+        const response = yield pool.query(queries.getIngredientById, [req.query.id]);
         res.status(200).json(response.rows);
     }
     catch (error) {

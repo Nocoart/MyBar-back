@@ -17,7 +17,7 @@ const getAllIngredients = async (req: Request, res: Response): Promise<void> => 
 
 const getIngredientById = async (req: Request, res: Response): Promise<void> => {
   try {
-    const response = await pool.query(queries.getIngredientById, [req.body.id]);
+    const response = await pool.query(queries.getIngredientById, [req.query.id]);
     res.status(200).json(response.rows);
   } catch (error: any) {
     res.status(400).json({ error: error.message });
