@@ -3,13 +3,8 @@ const router: IRouter = express.Router();
 
 const controller = require("./controller");
 
-//add new ingredient
 router.post("/add", controller.addIngredient);
-
-//get all ingredients
 router.get("/all", controller.getAllIngredients);
-
-//get ingredient by id
 router.get("/:id", controller.getIngredientById);
 
 //
