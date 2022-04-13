@@ -7,7 +7,7 @@ CREATE TABLE cocktails(
     name VARCHAR(50)
 );
 
-CREATE TABLE ingredients(
+CREATE TABLE ingredient(
     ingredients_id SERIAL PRIMARY KEY,
     name VARCHAR(50) UNIQUE,
     unit VARCHAR(10) NOT NULL,
