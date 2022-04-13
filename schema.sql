@@ -2,7 +2,7 @@ CREATE DATABASE my_bar_db;
 
 --\c into my_bar_DB
 
-CREATE TABLE cocktails(
+CREATE TABLE cocktail(
     cocktail_id SERIAL PRIMARY KEY,
     name VARCHAR(50)
 );
@@ -20,7 +20,7 @@ CREATE TABLE ingredient(
 
 
 --"id": "sTHzlGIVhBdKcxdf",
--- "name": "Ligth Rum",
+-- "name": "Light Rum",
 -- "unit": "cl",
 -- "category": "alcohol",
 -- "isRare": false,

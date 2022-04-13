@@ -19,7 +19,6 @@ router.get("/:id", controller.getIngredientById);
 // INSERT INTO ingredients(name, unit, category, isRare, imgUrl) VALUES ('Ligth Rum', 'Cl', 'alcohol', false, 'https://www.thecocktaildb.com/images/ingredients/Light%20Rum.png')
 
 // try {
-//   const { name, unit, category, isRare, imgUrl } = req.body;
 //   const newIngredient = await pool.query(
 //     `INSERT INTO ingredients(name) VALUES ($1, $2, $3, $4, $5) RETURNING *`,
 //     [name],
